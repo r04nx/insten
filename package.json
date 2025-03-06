@@ -1,5 +1,5 @@
 {
-  "name": "insten2",
+  "name": "insten",
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {
@@ -9,10 +9,22 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@expo-google-fonts/poppins": "^0.2.3",
+    "@expo-google-fonts/roboto": "^0.2.3",
+    "@expo/vector-icons": "^14.0.4",
+    "@react-native-async-storage/async-storage": "1.23.1",
+    "@react-native-community/datetimepicker": "8.2.0",
+    "@react-native-picker/picker": "^2.11.0",
     "expo": "~52.0.37",
+    "expo-font": "~13.0.4",
+    "expo-image-picker": "~16.0.6",
+    "expo-linear-gradient": "~12.7.2",
     "expo-status-bar": "~2.0.1",
+    "lottie-react-native": "^7.2.2",
     "react": "18.3.1",
-    "react-native": "0.76.7"
+    "react-native": "0.76.7",
+    "react-native-dropdown-picker": "^5.4.6",
+    "react-native-keyboard-aware-scroll-view": "^0.9.5"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
