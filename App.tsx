@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { colors } from './src/theme/colors';
 import { typography, createTextStyle } from './src/theme/typography';
 import { Card } from './src/components/Card';
@@ -23,6 +24,7 @@ import { RegistrationScreen } from './src/screens/RegistrationScreen';
 import { HomeScreen } from './src/screens/HomeScreen';
 import { LoadingTransition } from './src/components/LoadingTransition';
 import { SignInScreen } from './src/screens/SignInScreen';
+import { AppNavigator } from './src/navigation/AppNavigator';
 
 export default function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -83,7 +85,12 @@ export default function App() {
     }} />;
   }
 
-  return <HomeScreen />;
+  return (
+    <SafeAreaProvider>
+      <StatusBar style="auto" />
+      <AppNavigator />
+    </SafeAreaProvider>
+  );
 }
 
 const styles = StyleSheet.create({
